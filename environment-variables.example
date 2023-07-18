@@ -34,6 +34,9 @@ export KMS_KEYRING=cmek-keyring-bigquery
 export KMS_KEYNAME=cmek-bigquery-key
 export KMS_KEY="projects/${PROJECT_ID}/locations/${REGION}/keyRings/${KMS_KEYRING}/cryptoKeys/${KMS_KEYNAME}"
 
+# AN ALTERNATIVE CLOUD BUCKET NAMING APPROACH, USING A RANDOM NUMBER IN PLACE OF THE PROJECT_NUMBER
+#export GCS_BUCKET_TPCDI="$(( RANDOM=RANDOM%900000+100000 ))-tpcdi-data"
+
 # CloudDQ variables
 export CLOUDDQ_BIGQUERY_DATASET="cloud_dq"
 
